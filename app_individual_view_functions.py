@@ -968,7 +968,7 @@ def load_sector_weights_at_target_te(sector_name: str, period: str, target_te_bp
         st.stop()
 
     d = all_data[sector_name]
-
+  
     te = np.asarray(d["tracking_errors"], float)  # bps
     weights_by_te = d["weights_by_te"]            # list/array of w vectors
     stock_labels = list(d["stock_labels"])
