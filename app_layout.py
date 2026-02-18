@@ -6,7 +6,7 @@ import streamlit as st
 def set_page_config():
     st.set_page_config(
         page_title="TE–Carbon Dashboard",
-        layout="centered",
+        layout="wide",
         initial_sidebar_state="expanded"
     )
 
@@ -72,15 +72,14 @@ def apply_global_styles():
 
 
     st.markdown("""
-
-<style>
-div.block-container {
-  max-width: 1200px;   /* try 1100–1300 */
-  margin: 0 auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
+    <style>
+    div.block-container {
+        max-width: 1500px;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     .section-title {
         font-size: 22px;
