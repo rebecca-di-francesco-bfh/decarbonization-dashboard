@@ -72,21 +72,15 @@ def apply_global_styles():
 
 
     st.markdown("""
+
 <style>
 div.block-container {
-    max-width: min(1100px, calc(100vw - 4rem));
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 1200px;   /* try 1100–1300 */
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
-@media (max-width: 768px) {
-  div.block-container {
-    max-width: calc(100vw - 2rem);
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
+
 
     .section-title {
         font-size: 22px;
