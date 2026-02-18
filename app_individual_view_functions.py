@@ -882,12 +882,12 @@ def render_risk_return_profiles(sector_name: str, period: str):
         fig.add_trace(go.Scatter(
             x=ts["Date"], y=bench_idx, mode="lines",
             name="Benchmark", line=dict(width=2),
-            hovertemplate="Date: %{x|%Y-%m-%d}<br>Index: %{y:.2f}<extra></extra>"
+            hovertemplate="Date: %{x|%Y-%m-%d}<br>Benchmark Index: %{y:.2f}<extra></extra>"
         ))
         fig.add_trace(go.Scatter(
             x=ts["Date"], y=decarb_idx, mode="lines",
             name="Decarbonized", line=dict(width=2, color=color_main),
-            hovertemplate="Date: %{x|%Y-%m-%d}<br>Index: %{y:.2f}<extra></extra>"
+            hovertemplate="Date: %{x|%Y-%m-%d}<br>Decarbonized Index: %{y:.2f}<extra></extra>"
         ))
 
         fig.update_layout(
